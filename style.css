@@ -1,0 +1,62 @@
+body{
+    display: flex;
+    justify-content: center;
+    /* justify membuat konten yg di ingin menjadi ke tengah bagian atasg*/
+    align-items: center;
+    height: 100vh;
+    /* setelah di tambahkan align items dan height konten mejadi ke tengah */
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad8c4 100%); 
+    /* jadi warna gradient */
+    font-family: arial, sans-serif;
+    margin: 0;
+
+}
+
+.kalkulator{
+    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+    /* badan kalkulator jdi warna biru */
+    border-radius: 10px;
+    box-shadow: 0px, 0px, 20px, 0px rgb(0, 0, 0, o.1);
+    padding: 20px;
+    width: 300px; 
+}
+
+#display{
+    width: 95%;
+    height: 50px;
+    text-align: right;
+    padding: 10px;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+.button{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button{
+    width: 100%;
+    padding: 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #fbc2eb 0%, #a18cd1 100%);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover{
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    transform: scale(1.05);
+
+}
+
+button:active{
+    background: linear-gradient(135deg, #fda085 0%, #fbc2eb 100%);
+    transform: scale(0.95);
+}
